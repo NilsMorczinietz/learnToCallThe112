@@ -1,0 +1,133 @@
+.numpad {
+    width: 280px;
+    background-color: transparent;
+    border-radius: 16px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    /* padding: 16px; */
+    font-family: 'Inter', system-ui, sans-serif;
+    padding-bottom: 20px;
+}
+
+.numpad-display {
+    background-color: black;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 16px;
+    min-height: 24px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.numpad-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.numpad-button {
+    background-color: #6D6D6D;
+    border: none;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    transition: all 0.2s ease;
+}
+
+/* .numpad-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } */
+
+.numpad-button:active {
+    transform: translateY(0);
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+}
+
+.numpad-button-main {
+    font-size: 33px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.numpad-button-sub {
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 0px;
+}
+
+.numpad-controls {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.numpad-delete {
+    background-color: transparent;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.2s ease;
+}
+
+/* .numpad-delete:hover {
+    background-color: #e9ecef;
+    color: #333;
+  } */
+
+.numpad-call {
+    background-color: #4caf50;
+    border: none;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    /* box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4); */
+    transition: all 0.2s ease;
+}
+
+.numpad-call:hover {
+    background-color: #43a047;
+    transform: translateY(-2px);
+    /* box-shadow: 0 6px 16px rgba(76, 175, 80, 0.5); */
+}
+
+.numpad-call:active {
+    transform: translateY(0);
+    /* box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3); */
+}
+
+.numpad-call-active {
+    background-color: #e53935;
+    /* box-shadow: 0 4px 12px rgba(229, 57, 53, 0.4); */
+}
+
+.numpad-call-active:hover {
+    background-color: #d32f2f;
+    /* box-shadow: 0 6px 16px rgba(229, 57, 53, 0.5); */
+}
